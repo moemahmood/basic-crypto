@@ -1,4 +1,5 @@
 def caesar ()
+message=input()
 key=
 mode="encrypt"
 SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
