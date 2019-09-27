@@ -1,5 +1,4 @@
-def caesar ()
-message=input()
+def caesar ():
 key=
 mode="encrypt"
 SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
@@ -18,4 +17,5 @@ for symbol in message:
         translated=translated+SYMBOLS[translatedindex]
     else:
         translated=translated+symbol
-return translated
+input_message = input() 
+print(caesar(input_message) )
