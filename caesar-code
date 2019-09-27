@@ -1,21 +1,22 @@
 def caesar ():
-key=
-mode="encrypt"
-SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
-translated=""
-for symbol in message:
-    if symbol in SYMBOLS:
-        symbolindex=SYMBOLS.find(symbol)
-        if mode=="encrypt":
-            translatedindex=symbolindex+key
-        elif mode=="decrypt":
-            translatedindex=symbolindex-key
-        if translatedindex>=len(SYMBOLS):
-            translatedindex=translatedindex-len(SYMBOLS)
-        elif translatedindex<0:
-            translatedindex=translatedindex+len(SYMBOLS)
-        translated=translated+SYMBOLS[translatedindex]
+    key=2
+    mode="encrypt"
+    SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
+    translated=""
+    for symbol in message:
+        if symbol in SYMBOLS:
+            symbolindex=SYMBOLS.find(symbol)
+            if mode=="encrypt":
+                translatedindex=symbolindex+key
+            elif mode=="decrypt":
+                translatedindex=symbolindex-key
+            if translatedindex>=len(SYMBOLS):
+                translatedindex=translatedindex-len(SYMBOLS)
+            elif translatedindex<0:
+                translatedindex=translatedindex+len(SYMBOLS)
+            translated=translated+SYMBOLS[translatedindex]
     else:
         translated=translated+symbol
-input_message = input() 
-print(caesar(input_message) )
+    return translated
+message=input()
+print(caesar())
