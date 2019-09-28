@@ -20,3 +20,6 @@ def caesar ():
     return translated
 message=input()
 print(caesar())
+f= open("cipher.txt","w+")
+f.write(caesar())
+f.close() 
