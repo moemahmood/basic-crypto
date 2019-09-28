@@ -1,4 +1,4 @@
-def caesar ():
+def caesar(message):
     key=2
     mode="encrypt"
     SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
@@ -18,8 +18,3 @@ def caesar ():
     else:
         translated=translated+symbol
     return translated
-message=input()
-print(caesar())
-f= open("cipher.txt","w+")
-f.write(caesar())
-f.close() 
