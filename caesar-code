@@ -1,6 +1,6 @@
 import random
 def caesar(message):
-    key=random.randint(10,1300)
+    key=random.randint(10,60)
     mode="encrypt"
     SYMBOLS="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890.,/;"
     translated=""
@@ -23,5 +23,5 @@ message=input()
 cipher = caesar(message)
 print(cipher)
 f= open("cipher.txt","w+")
-f.write(caesar())
+f.write(caesar(message))
 f.close() 
